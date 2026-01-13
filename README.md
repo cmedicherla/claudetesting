@@ -46,9 +46,19 @@ To refresh the zipcode data:
 python3 download_zipcode_data.py
 ```
 
-### Stroke Center Data (Requires Update)
+### Stroke Center Data (✓ Real Data Included)
 
-**IMPORTANT**: The current file contains only 10 sample centers for testing. You need to replace this with real data from official sources.
+**UPDATED**: The database now contains **72 real comprehensive stroke centers** across **30 states**, compiled from:
+- Pennsylvania Department of Health official stroke center designations
+- Major academic medical centers with Joint Commission/DNV certification
+- All centers have been geocoded with accurate coordinates
+
+**To update the database with more centers:**
+```bash
+python3 compile_all_stroke_centers.py
+```
+
+This script automatically geocodes addresses using free OpenStreetMap data (no API key required).
 
 #### Option 1: Joint Commission (Recommended)
 
@@ -111,9 +121,10 @@ stroke-center-finder/
 ├── app.js                          # Frontend JavaScript logic
 ├── download_zipcode_data.py        # Script to download zipcode data
 ├── prepare_stroke_centers.py      # Script to prepare stroke center data
+├── compile_all_stroke_centers.py  # Script to compile and geocode all centers
 ├── data/
 │   ├── zipcodes.json              # US zipcode coordinates (33,144 entries)
-│   └── stroke_centers.json        # Stroke center data (UPDATE THIS!)
+│   └── stroke_centers.json        # Stroke center data (72 centers)
 └── README.md                       # This file
 ```
 
@@ -179,7 +190,7 @@ This downloads the latest US zipcode coordinates from government sources.
 ## Limitations
 
 - Distance is calculated "as the crow flies" (straight line), not driving distance
-- Sample data includes only 10 centers - must be updated with real data
+- Database includes 72 major comprehensive stroke centers - additional centers can be added using the compilation script
 - Requires internet connection only to load initial page (can work offline after)
 
 ## Emergency Notice
