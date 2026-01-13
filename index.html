@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Stroke Center Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Comprehensive Stroke Center Finder</h1>
+            <p class="subtitle">Find certified stroke centers within 50 miles of any US zipcode</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="zipcode"
+                    placeholder="Enter your zipcode (e.g., 10001)"
+                    maxlength="5"
+                    pattern="[0-9]{5}"
+                >
+                <button id="searchBtn" onclick="searchStrokeCenters()">Find Centers</button>
+            </div>
+            <div id="error" class="error-message"></div>
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Searching for stroke centers...</p>
+            </div>
+        </div>
+
+        <div id="results" class="results-section" style="display: none;">
+            <div class="results-header">
+                <h2>Results for <span id="searchZipcode"></span></h2>
+                <p id="resultsCount"></p>
+            </div>
+            <div id="centersList" class="centers-list"></div>
+        </div>
+
+        <footer>
+            <p>Data sources: Joint Commission & DNV Healthcare Certified Stroke Centers</p>
+            <p class="disclaimer">Always call 911 in case of a stroke emergency</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

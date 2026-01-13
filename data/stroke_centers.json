@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Mayo Clinic Hospital",
+    "address": "200 First Street SW",
+    "city": "Rochester",
+    "state": "MN",
+    "zipcode": "55905",
+    "latitude": 44.0225,
+    "longitude": -92.4668,
+    "phone": "(507) 284-2511",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "Johns Hopkins Hospital",
+    "address": "1800 Orleans Street",
+    "city": "Baltimore",
+    "state": "MD",
+    "zipcode": "21287",
+    "latitude": 39.2971,
+    "longitude": -76.5929,
+    "phone": "(410) 955-5000",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "Massachusetts General Hospital",
+    "address": "55 Fruit Street",
+    "city": "Boston",
+    "state": "MA",
+    "zipcode": "02114",
+    "latitude": 42.3631,
+    "longitude": -71.0686,
+    "phone": "(617) 726-2000",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "Cleveland Clinic",
+    "address": "9500 Euclid Avenue",
+    "city": "Cleveland",
+    "state": "OH",
+    "zipcode": "44195",
+    "latitude": 41.5034,
+    "longitude": -81.6219,
+    "phone": "(216) 444-2200",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "UCLA Medical Center",
+    "address": "757 Westwood Plaza",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zipcode": "90095",
+    "latitude": 34.0653,
+    "longitude": -118.4454,
+    "phone": "(310) 825-9111",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "New York-Presbyterian Hospital",
+    "address": "525 East 68th Street",
+    "city": "New York",
+    "state": "NY",
+    "zipcode": "10065",
+    "latitude": 40.765,
+    "longitude": -73.954,
+    "phone": "(212) 746-5454",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "Northwestern Memorial Hospital",
+    "address": "251 East Huron Street",
+    "city": "Chicago",
+    "state": "IL",
+    "zipcode": "60611",
+    "latitude": 41.8949,
+    "longitude": -87.6217,
+    "phone": "(312) 926-2000",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "Houston Methodist Hospital",
+    "address": "6565 Fannin Street",
+    "city": "Houston",
+    "state": "TX",
+    "zipcode": "77030",
+    "latitude": 29.7091,
+    "longitude": -95.398,
+    "phone": "(713) 790-3311",
+    "certification_org": "DNV",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "UCSF Medical Center",
+    "address": "505 Parnassus Avenue",
+    "city": "San Francisco",
+    "state": "CA",
+    "zipcode": "94143",
+    "latitude": 37.7627,
+    "longitude": -122.4581,
+    "phone": "(415) 476-1000",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "Stanford Health Care",
+    "address": "300 Pasteur Drive",
+    "city": "Stanford",
+    "state": "CA",
+    "zipcode": "94305",
+    "latitude": 37.4419,
+    "longitude": -122.174,
+    "phone": "(650) 723-4000",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  }
+]
