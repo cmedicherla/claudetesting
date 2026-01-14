@@ -6,89 +6,99 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #f5f5f7;
     min-height: 100vh;
     padding: 20px;
+    color: #1d1d1f;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
     overflow: hidden;
 }
 
 header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 40px 30px;
+    background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+    color: #1d1d1f;
+    padding: 60px 30px 40px;
     text-align: center;
+    border-bottom: 1px solid #e5e5e7;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.8em;
+    margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #1d1d1f;
 }
 
 .subtitle {
-    font-size: 1.1em;
-    opacity: 0.9;
+    font-size: 1.15em;
+    color: #6e6e73;
+    font-weight: 400;
 }
 
 .search-section {
-    padding: 40px 30px;
-    background: #f8f9fa;
+    padding: 50px 30px;
+    background: white;
 }
 
 .search-box {
     display: flex;
-    gap: 15px;
+    gap: 12px;
     max-width: 600px;
     margin: 0 auto;
 }
 
 #zipcode {
     flex: 1;
-    padding: 15px 20px;
-    font-size: 1.1em;
-    border: 2px solid #ddd;
-    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 1.05em;
+    border: 1px solid #d2d2d7;
+    border-radius: 8px;
     outline: none;
-    transition: border-color 0.3s;
+    transition: all 0.2s ease;
+    background: white;
 }
 
 #zipcode:focus {
-    border-color: #667eea;
+    border-color: #86868b;
+    box-shadow: 0 0 0 3px rgba(134, 134, 139, 0.1);
 }
 
 #searchBtn {
-    padding: 15px 35px;
-    font-size: 1.1em;
-    font-weight: 600;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 16px 32px;
+    font-size: 1.05em;
+    font-weight: 500;
+    background: #1d1d1f;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: all 0.2s ease;
 }
 
 #searchBtn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    background: #424245;
+    transform: translateY(-1px);
 }
 
 #searchBtn:active {
     transform: translateY(0);
+    background: #1d1d1f;
 }
 
 .error-message {
-    color: #dc3545;
+    color: #d1180b;
     text-align: center;
     margin-top: 15px;
     font-weight: 500;
+    font-size: 0.95em;
 }
 
 .loading {
@@ -97,12 +107,12 @@ header h1 {
 }
 
 .spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #667eea;
+    border: 3px solid #e5e5e7;
+    border-top: 3px solid #86868b;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.8s linear infinite;
     margin: 0 auto 15px;
 }
 
@@ -112,7 +122,8 @@ header h1 {
 }
 
 .results-section {
-    padding: 40px 30px;
+    padding: 40px 30px 60px;
+    background: #fafafa;
 }
 
 .results-header {
@@ -121,39 +132,42 @@ header h1 {
 }
 
 .results-header h2 {
-    color: #333;
-    margin-bottom: 10px;
+    color: #1d1d1f;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.8em;
 }
 
 #resultsCount {
-    color: #666;
-    font-size: 1.1em;
+    color: #6e6e73;
+    font-size: 1em;
 }
 
 .centers-list {
     display: grid;
-    gap: 20px;
+    gap: 16px;
 }
 
 .center-card {
-    background: #fff;
-    border: 2px solid #e9ecef;
-    border-radius: 15px;
-    padding: 25px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    background: white;
+    border: 1px solid #e5e5e7;
+    border-radius: 10px;
+    padding: 24px;
+    transition: all 0.2s ease;
 }
 
 .center-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: #d2d2d7;
 }
 
 .center-name {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 16px;
+    line-height: 1.3;
 }
 
 .center-info {
@@ -164,58 +178,64 @@ header h1 {
 .info-row {
     display: flex;
     align-items: center;
-    color: #555;
+    color: #6e6e73;
+    font-size: 0.95em;
 }
 
 .info-label {
-    font-weight: 600;
-    min-width: 120px;
-    color: #667eea;
+    font-weight: 500;
+    min-width: 110px;
+    color: #424245;
 }
 
 .distance-badge {
     display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-weight: 600;
-    margin-top: 10px;
+    background: #f5f5f7;
+    color: #1d1d1f;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-top: 12px;
+    font-size: 0.95em;
+    border: 1px solid #e5e5e7;
 }
 
 .cert-badge {
     display: inline-block;
-    background: #28a745;
-    color: white;
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.85em;
-    font-weight: 600;
-    margin-left: 10px;
+    background: #f5f5f7;
+    color: #424245;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-left: 8px;
+    border: 1px solid #e5e5e7;
 }
 
 footer {
-    background: #f8f9fa;
-    padding: 30px;
+    background: white;
+    padding: 40px 30px;
     text-align: center;
-    color: #666;
-    border-top: 2px solid #e9ecef;
+    color: #6e6e73;
+    border-top: 1px solid #e5e5e7;
+    font-size: 0.9em;
 }
 
 footer p {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 .disclaimer {
-    color: #dc3545;
+    color: #d1180b;
     font-weight: 600;
-    font-size: 1.1em;
-    margin-top: 10px;
+    font-size: 1.05em;
+    margin-top: 16px;
 }
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .search-box {
@@ -224,5 +244,9 @@ footer p {
 
     .container {
         border-radius: 0;
+    }
+
+    body {
+        padding: 0;
     }
 }

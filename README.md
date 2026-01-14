@@ -48,10 +48,12 @@ python3 download_zipcode_data.py
 
 ### Stroke Center Data (✓ Real Data Included)
 
-**UPDATED**: The database now contains **72 real comprehensive stroke centers** across **30 states**, compiled from:
-- Pennsylvania Department of Health official stroke center designations
-- Major academic medical centers with Joint Commission/DNV certification
+**UPDATED**: The database now contains **117 real comprehensive stroke centers** across **30 states**, compiled from:
+- **Florida**: 49 centers (complete official state data from Florida Agency for Healthcare Administration)
+- **Pennsylvania**: 14 centers (official state health department designations)
+- **Major Academic Medical Centers**: 54 centers with known Joint Commission/DNV certification
 - All centers have been geocoded with accurate coordinates
+- **Coverage**: 39.4% of the estimated 297 total US comprehensive stroke centers
 
 **To update the database with more centers:**
 ```bash
@@ -116,16 +118,17 @@ python3 prepare_stroke_centers.py
 
 ```
 stroke-center-finder/
-├── index.html                      # Main dashboard HTML
-├── styles.css                      # Styling for the dashboard
-├── app.js                          # Frontend JavaScript logic
-├── download_zipcode_data.py        # Script to download zipcode data
-├── prepare_stroke_centers.py      # Script to prepare stroke center data
-├── compile_all_stroke_centers.py  # Script to compile and geocode all centers
+├── index.html                        # Main dashboard HTML
+├── styles.css                        # Minimalistic white/grey styling
+├── app.js                            # Frontend JavaScript logic
+├── download_zipcode_data.py          # Script to download zipcode data
+├── prepare_stroke_centers.py        # Script to prepare stroke center data
+├── compile_all_stroke_centers.py    # Original compilation script
+├── compile_comprehensive_centers.py # Enhanced script with FL + PA data
 ├── data/
-│   ├── zipcodes.json              # US zipcode coordinates (33,144 entries)
-│   └── stroke_centers.json        # Stroke center data (72 centers)
-└── README.md                       # This file
+│   ├── zipcodes.json                # US zipcode coordinates (33,144 entries)
+│   └── stroke_centers.json          # Stroke center data (117 centers)
+└── README.md                         # This file
 ```
 
 ## How It Works
@@ -190,7 +193,8 @@ This downloads the latest US zipcode coordinates from government sources.
 ## Limitations
 
 - Distance is calculated "as the crow flies" (straight line), not driving distance
-- Database includes 72 major comprehensive stroke centers - additional centers can be added using the compilation script
+- Database includes 117 comprehensive stroke centers (39.4% of ~297 total US centers)
+- Additional centers can be added by downloading more state health department lists
 - Requires internet connection only to load initial page (can work offline after)
 
 ## Emergency Notice
