@@ -1,0 +1,175 @@
+Loading existing stroke centers...
+Current database: 188 centers
+
+Geocoding and adding 91 new centers...
+1/91: Processing Adventist Health Glendale, Glendale, CA
+  ✓ Added (34.2051877, -118.2199722)
+2/91: Processing Antelope Valley Hospital, Lancaster, CA
+  ✓ Added (34.6867333, -118.1595496)
+3/91: Skipping duplicate - Cedars-Sinai Medical Center
+4/91: Processing MemorialCare Long Beach Medical Center, Long Beach, CA
+  ✗ Failed to geocode
+5/91: Processing PIH Health Whittier Hospital, Whittier, CA
+  ✓ Added (33.9699758, -118.0497169)
+6/91: Processing Pomona Valley Hospital Medical Center, Pomona, CA
+  ✓ Added (34.0772198, -117.7505896)
+7/91: Processing Providence Holy Cross Medical Center, Mission Hills, CA
+  ✓ Added (34.2808028, -118.4588829)
+8/91: Processing Providence Little Company of Mary Medical Center, Torrance, CA
+  ✗ Failed to geocode
+9/91: Processing Providence Saint John's Health Center, Santa Monica, CA
+  ✓ Added (34.0305995, -118.4794585)
+10/91: Processing Providence Saint Joseph Medical Center, Burbank, CA
+  ✓ Added (34.1562348, -118.3285236)
+11/91: Processing Ronald Reagan UCLA Medical Center, Los Angeles, CA
+  ✓ Added (34.0664551, -118.4465189)
+12/91: Processing Emanate Health Queen of the Valley Hospital, West Covina, CA
+  ✗ Failed to geocode
+13/91: Processing Los Robles Regional Medical Center, Thousand Oaks, CA
+  ✗ Failed to geocode
+14/91: Processing UC San Diego Health Hillcrest, San Diego, CA
+  ✗ Failed to geocode
+15/91: Processing UC San Diego Health Jacobs Medical Center, La Jolla, CA
+  ✗ Failed to geocode
+16/91: Processing Sharp Grossmont Hospital, La Mesa, CA
+  ✓ Added (32.7809381, -117.0066625)
+17/91: Processing Scripps Memorial Hospital La Jolla, La Jolla, CA
+  ✓ Added (32.884364, -117.2249398)
+18/91: Skipping duplicate - UCSF Medical Center
+19/91: Processing Stanford Health Care, Palo Alto, CA
+  ✓ Added (37.4435963, -122.1704114)
+20/91: Processing Good Samaritan Hospital, San Jose, CA
+  ✓ Added (37.2522952, -121.9457139)
+21/91: Processing VCU Medical Center, Richmond, VA
+  ✓ Added (37.5402575, -77.4300631)
+22/91: Skipping duplicate - University of Virginia Medical Center
+23/91: Processing Riverside Regional Medical Center, Newport News, VA
+  ✓ Added (37.0634252, -76.482719)
+24/91: Processing Inova Fairfax Hospital, Falls Church, VA
+  ✓ Added (38.8574108, -77.2284948)
+25/91: Processing Sentara Norfolk General Hospital, Norfolk, VA
+  ✓ Added (36.8624604, -76.3038338)
+26/91: Processing Carilion Roanoke Memorial Hospital, Roanoke, VA
+  ✓ Added (37.2513355, -79.9415762)
+27/91: Skipping duplicate - Harborview Medical Center
+28/91: Skipping duplicate - University of Washington Medical Center
+29/91: Processing Virginia Mason Medical Center, Seattle, WA
+  ✗ Failed to geocode
+30/91: Processing Swedish Medical Center, Seattle, WA
+  ✓ Added (47.6086804, -122.3226621)
+31/91: Processing Providence Sacred Heart Medical Center, Spokane, WA
+  ✗ Failed to geocode
+32/91: Skipping duplicate - Vanderbilt University Medical Center
+33/91: Processing University of Tennessee Medical Center, Knoxville, TN
+  ✓ Added (35.940071, -83.9434785)
+34/91: Processing TriStar Skyline Medical Center, Nashville, TN
+  ✓ Added (36.2450987, -86.7495457)
+35/91: Processing Fort Sanders Regional Medical Center, Knoxville, TN
+  ✓ Added (35.9572783, -83.9371937)
+36/91: Processing Ascension Saint Thomas Hospital West, Nashville, TN
+  ✗ Failed to geocode
+37/91: Processing Regional One Health, Memphis, TN
+  ✗ Failed to geocode
+38/91: Skipping duplicate - Duke University Hospital
+39/91: Processing Wake Forest Baptist Medical Center, Winston-Salem, NC
+  ✓ Added (36.0898378, -80.2677122)
+40/91: Processing Atrium Health Carolinas Medical Center, Charlotte, NC
+  ✗ Failed to geocode
+41/91: Processing UNC Medical Center, Chapel Hill, NC
+  ✓ Added (35.9050278, -79.0506418)
+42/91: Processing Vidant Medical Center, Greenville, NC
+  ✓ Added (35.6080369, -77.4014251)
+43/91: Processing Mission Hospital, Asheville, NC
+  ✓ Added (35.5766889, -82.5492249)
+44/91: Processing Novant Health Forsyth Medical Center, Winston-Salem, NC
+  ✓ Added (36.0757267, -80.2969079)
+45/91: Skipping duplicate - Emory University Hospital
+46/91: Processing Grady Memorial Hospital, Atlanta, GA
+  ✓ Added (33.7517323, -84.3820052)
+47/91: Processing Wellstar Kennestone Hospital, Marietta, GA
+  ✓ Added (33.9685978, -84.552905)
+48/91: Processing Northside Hospital, Atlanta, GA
+  ✓ Added (33.9102901, -84.3545068)
+49/91: Processing Piedmont Atlanta Hospital, Atlanta, GA
+  ✓ Added (33.8093759, -84.3954273)
+50/91: Processing Augusta University Medical Center, Augusta, GA
+  ✓ Added (33.4711001, -81.9898167)
+51/91: Skipping duplicate - Cleveland Clinic
+52/91: Skipping duplicate - University Hospitals Cleveland Medical Center
+53/91: Skipping duplicate - Ohio State University Wexner Medical Center
+54/91: Processing UC Health University of Cincinnati Medical Center, Cincinnati, OH
+  ✗ Failed to geocode
+55/91: Processing MetroHealth Medical Center, Cleveland, OH
+  ✓ Added (41.4604102, -81.697947)
+56/91: Processing Miami Valley Hospital, Dayton, OH
+  ✓ Added (39.7452461, -84.1860386)
+57/91: Processing Mercy Health St. Vincent Medical Center, Toledo, OH
+  ✗ Failed to geocode
+58/91: Processing OhioHealth Riverside Methodist Hospital, Columbus, OH
+  ✓ Added (40.0310931, -83.034716)
+59/91: Skipping duplicate - University of Michigan Health
+60/91: Processing Henry Ford Hospital, Detroit, MI
+  ✓ Added (42.3678522, -83.0855196)
+61/91: Processing Beaumont Hospital Royal Oak, Royal Oak, MI
+  ✓ Added (42.5138736, -83.1928803)
+62/91: Processing Spectrum Health Butterworth Hospital, Grand Rapids, MI
+  ✗ Failed to geocode
+63/91: Processing Detroit Receiving Hospital, Detroit, MI
+  ✓ Added (42.3534138, -83.0547199)
+64/91: Processing Sparrow Hospital, Lansing, MI
+  ✓ Added (42.7341598, -84.5352782)
+65/91: Skipping duplicate - Northwestern Memorial Hospital
+66/91: Skipping duplicate - Rush University Medical Center
+67/91: Skipping duplicate - University of Chicago Medical Center
+68/91: Processing Advocate Christ Medical Center, Oak Lawn, IL
+  ✓ Added (41.7217948, -87.7302458)
+69/91: Processing Loyola University Medical Center, Maywood, IL
+  ✓ Added (41.8582703, -87.8351638)
+70/91: Processing OSF HealthCare Saint Francis Medical Center, Peoria, IL
+  ✗ Failed to geocode
+71/91: Processing Froedtert Hospital, Milwaukee, WI
+  ✓ Added (43.0413956, -88.0245562)
+72/91: Processing Aurora St. Luke's Medical Center, Milwaukee, WI
+  ✓ Added (42.9899857, -87.9504134)
+73/91: Skipping duplicate - University of Wisconsin Hospital
+74/91: Processing Ascension Columbia St. Mary's Hospital Milwaukee, Milwaukee, WI
+  ✓ Added (43.0607227, -87.8815586)
+75/91: Processing IU Health Methodist Hospital, Indianapolis, IN
+  ✗ Failed to geocode
+76/91: Processing Ascension St. Vincent Indianapolis Hospital, Indianapolis, IN
+  ✗ Failed to geocode
+77/91: Processing Indiana University Health University Hospital, Indianapolis, IN
+  ✗ Failed to geocode
+78/91: Skipping duplicate - Johns Hopkins Hospital
+79/91: Processing University of Maryland Medical Center, Baltimore, MD
+  ✓ Added (39.2882737, -76.6243944)
+80/91: Processing MedStar Washington Hospital Center, Washington, DC
+  ✓ Added (38.9290284, -77.0148946)
+81/91: Processing George Washington University Hospital, Washington, DC
+  ✓ Added (38.9013767, -77.0506159)
+82/91: Processing Yale New Haven Hospital, New Haven, CT
+  ✓ Added (41.3046035, -72.9355941)
+83/91: Processing Hartford Hospital, Hartford, CT
+  ✓ Added (41.7540689, -72.6793902)
+84/91: Processing St. Francis Hospital, Hartford, CT
+  ✓ Added (41.7741413, -72.6980837)
+85/91: Processing UCHealth University of Colorado Hospital, Aurora, CO
+  ✓ Added (39.7643447, -104.8333583)
+86/91: Processing Presbyterian St. Luke's Medical Center, Denver, CO
+  ✓ Added (39.747154, -104.9670084)
+87/91: Processing Medical Center of the Rockies, Loveland, CO
+  ✓ Added (40.4154198, -104.9974664)
+88/91: Skipping duplicate - Banner University Medical Center Phoenix
+89/91: Processing Mayo Clinic Hospital Phoenix, Phoenix, AZ
+  ✓ Added (33.6578789, -111.9547698)
+90/91: Processing Banner University Medical Center Tucson, Tucson, AZ
+  ✓ Added (32.241234, -110.9456042)
+91/91: Processing HonorHealth Scottsdale Osborn Medical Center, Scottsdale, AZ
+  ✓ Added (33.4886042, -111.9229239)
+
+============================================================
+Complete!
+Added: 55 new centers
+Skipped: 18 duplicates
+Total in database: 243 centers
+============================================================

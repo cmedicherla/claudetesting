@@ -48,14 +48,15 @@ python3 download_zipcode_data.py
 
 ### Stroke Center Data (✓ Real Data Included)
 
-**UPDATED**: The database now contains **188 real comprehensive stroke centers** across **30 states**, compiled from:
+**UPDATED**: The database now contains **243 real comprehensive stroke centers** across **41 states**, compiled from:
 - **Texas**: 51 centers (complete official Texas DSHS data)
 - **Florida**: 49 centers (complete official Florida Agency for Healthcare Administration data)
 - **New York**: 30 centers (complete official NYS Department of Health designations)
+- **California**: 20 centers (major LA, San Diego, and Bay Area comprehensive stroke centers)
 - **Pennsylvania**: 14 centers (official PA Department of Health designations)
-- **California & Other States**: 44 centers (major academic medical centers with Joint Commission/DNV certification)
+- **Other 36 States**: 79 centers (comprehensive stroke centers from VA, WA, TN, NC, GA, OH, MI, IL, WI, IN, MD, DC, CT, CO, AZ, and more)
 - All centers have been geocoded with accurate coordinates
-- **Coverage**: 63.3% of the estimated 297 total US comprehensive stroke centers
+- **Coverage**: 81.8% of the estimated 297 total US comprehensive stroke centers
 
 **To update the database with more centers:**
 ```bash
@@ -130,7 +131,8 @@ stroke-center-finder/
 ├── compile_final_database.py        # Final database with TX + NY data
 ├── data/
 │   ├── zipcodes.json                # US zipcode coordinates (33,144 entries)
-│   └── stroke_centers.json          # Stroke center data (188 centers)
+│   └── stroke_centers.json          # Stroke center data (243 centers)
+├── add_remaining_centers.py         # Script to add manually researched centers
 └── README.md                         # This file
 ```
 
@@ -196,8 +198,8 @@ This downloads the latest US zipcode coordinates from government sources.
 ## Limitations
 
 - Distance is calculated "as the crow flies" (straight line), not driving distance
-- Database includes 188 comprehensive stroke centers (63.3% of ~297 total US centers)
-- Covers 30 states; additional centers can be added from other state health departments
+- Database includes 243 comprehensive stroke centers (81.8% of ~297 total US centers)
+- Covers 41 states; additional centers can be added from other state health departments and certification databases
 - Requires internet connection only to load initial page (can work offline after)
 
 ## Emergency Notice
