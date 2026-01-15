@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Stroke Center Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Comprehensive Stroke Center Finder</h1>
+            <p class="subtitle">Locate certified comprehensive stroke centers across the United States</p>
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalCenters">297</div>
+                    <div class="stat-label">Stroke Centers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="totalStates">39</div>
+                    <div class="stat-label">States Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Verified Data</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="search-section">
+            <div class="search-tabs">
+                <button class="tab-button active" onclick="switchTab('zipcode')">
+                    Search by Zipcode
+                </button>
+                <button class="tab-button" onclick="switchTab('state')">
+                    Browse by State
+                </button>
+            </div>
+
+            <div id="zipcodeTab" class="tab-content active">
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="zipcode"
+                        placeholder="Enter your zipcode (e.g., 10001)"
+                        maxlength="5"
+                        pattern="[0-9]{5}"
+                    >
+                    <button id="searchBtn" onclick="searchStrokeCenters()">Find Centers</button>
+                </div>
+                <p class="search-hint">Search within 100 miles of any US zipcode</p>
+            </div>
+
+            <div id="stateTab" class="tab-content">
+                <div class="search-box">
+                    <select id="stateSelect" onchange="searchByState()">
+                        <option value="">Select a state...</option>
+                    </select>
+                    <button id="stateSearchBtn" onclick="searchByState()">View All Centers</button>
+                </div>
+                <p class="search-hint">View all centers in a specific state</p>
+            </div>
+
+            <div id="error" class="error-message"></div>
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p id="loadingText">Searching for stroke centers...</p>
+            </div>
+        </div>
+
+        <div id="results" class="results-section" style="display: none;">
+            <div class="results-header">
+                <h2>Results for <span id="searchZipcode"></span></h2>
+                <p id="resultsCount"></p>
+            </div>
+            <div id="centersList" class="centers-list"></div>
+        </div>
+
+        <footer>
+            <p>Data sources: Joint Commission, DNV Healthcare, ACHC, and State-Designated Comprehensive Stroke Centers</p>
+            <p class="disclaimer">Always call 911 in case of a stroke emergency</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
