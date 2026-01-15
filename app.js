@@ -200,13 +200,10 @@ function switchTab(tabName) {
 function displayResults(zipcode, centers, city, state) {
     const resultsDiv = document.getElementById('results');
     const centersListDiv = document.getElementById('centersList');
-    const searchZipcodeSpan = document.getElementById('searchZipcode');
     const resultsCountP = document.getElementById('resultsCount');
 
-    searchZipcodeSpan.textContent = `${zipcode} (${city}, ${state})`;
-
     if (centers.length === 0) {
-        resultsCountP.textContent = 'No comprehensive stroke centers found within 100 miles';
+        resultsCountP.textContent = `No comprehensive stroke centers found within 100 miles of ${zipcode}`;
         centersListDiv.innerHTML = `
             <div style="text-align: center; padding: 40px; color: #666;">
                 <p style="font-size: 1.2em; margin-bottom: 10px;">No centers found nearby</p>
@@ -214,19 +211,30 @@ function displayResults(zipcode, centers, city, state) {
             </div>
         `;
     } else {
-        resultsCountP.textContent = `Found ${centers.length} comprehensive stroke center${centers.length !== 1 ? 's' : ''} within 100 miles`;
+        resultsCountP.textContent = `Found ${centers.length} comprehensive stroke center${centers.length !== 1 ? 's' : ''} within 100 miles of ${zipcode}`;
 
-        centersListDiv.innerHTML = centers.map(center => `
+        centersListDiv.innerHTML = centers.map(center => {
+            // Build address string properly to avoid leading commas
+            let addressParts = [];
+            if (center.address) addressParts.push(center.address);
+            if (center.city) addressParts.push(center.city);
+            if (center.state) addressParts.push(center.state);
+            if (center.zipcode) addressParts.push(center.zipcode);
+            const fullAddress = addressParts.join(', ');
+
+            return `
             <div class="center-card">
                 <div class="center-name">
                     ${center.name}
                     ${center.certification_org ? `<span class="cert-badge">${center.certification_org}</span>` : ''}
                 </div>
                 <div class="center-info">
+                    ${fullAddress ? `
                     <div class="info-row">
                         <span class="info-label">Address:</span>
-                        <span>${center.address}${center.city ? `, ${center.city}` : ''}${center.state ? `, ${center.state}` : ''} ${center.zipcode || ''}</span>
+                        <span>${fullAddress}</span>
                     </div>
+                    ` : ''}
                     ${center.phone ? `
                     <div class="info-row">
                         <span class="info-label">Phone:</span>
@@ -244,7 +252,8 @@ function displayResults(zipcode, centers, city, state) {
                     </div>
                 </div>
             </div>
-        `).join('');
+        `;
+        }).join('');
     }
 
     resultsDiv.style.display = 'block';
@@ -254,10 +263,7 @@ function displayResults(zipcode, centers, city, state) {
 function displayStateResults(state, centers) {
     const resultsDiv = document.getElementById('results');
     const centersListDiv = document.getElementById('centersList');
-    const searchZipcodeSpan = document.getElementById('searchZipcode');
     const resultsCountP = document.getElementById('resultsCount');
-
-    searchZipcodeSpan.textContent = `${stateNames[state] || state} (${state})`;
 
     if (centers.length === 0) {
         resultsCountP.textContent = 'No comprehensive stroke centers found in this state';
