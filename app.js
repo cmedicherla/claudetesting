@@ -113,7 +113,7 @@ function performSearch(zipcode) {
     const userLat = userLocation.lat;
     const userLon = userLocation.lon;
 
-    // Find centers within 50 miles
+    // Find centers within 100 miles
     const centersWithDistance = strokeCenters
         .map(center => {
             const distance = calculateDistance(
@@ -124,7 +124,7 @@ function performSearch(zipcode) {
             );
             return { ...center, distance };
         })
-        .filter(center => center.distance <= 50)
+        .filter(center => center.distance <= 100)
         .sort((a, b) => a.distance - b.distance);
 
     // Hide loading, show results
@@ -206,7 +206,7 @@ function displayResults(zipcode, centers, city, state) {
     searchZipcodeSpan.textContent = `${zipcode} (${city}, ${state})`;
 
     if (centers.length === 0) {
-        resultsCountP.textContent = 'No comprehensive stroke centers found within 50 miles';
+        resultsCountP.textContent = 'No comprehensive stroke centers found within 100 miles';
         centersListDiv.innerHTML = `
             <div style="text-align: center; padding: 40px; color: #666;">
                 <p style="font-size: 1.2em; margin-bottom: 10px;">No centers found nearby</p>
@@ -214,7 +214,7 @@ function displayResults(zipcode, centers, city, state) {
             </div>
         `;
     } else {
-        resultsCountP.textContent = `Found ${centers.length} comprehensive stroke center${centers.length !== 1 ? 's' : ''} within 50 miles`;
+        resultsCountP.textContent = `Found ${centers.length} comprehensive stroke center${centers.length !== 1 ? 's' : ''} within 100 miles`;
 
         centersListDiv.innerHTML = centers.map(center => `
             <div class="center-card">

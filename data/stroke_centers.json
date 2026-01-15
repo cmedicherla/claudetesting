@@ -1584,18 +1584,6 @@
     "certification_type": "Comprehensive Stroke Center"
   },
   {
-    "name": "NYU Langone Hospitals",
-    "address": "",
-    "city": "New York",
-    "state": "NY",
-    "zipcode": "10016",
-    "latitude": 40.7423027,
-    "longitude": -73.9735654,
-    "phone": "",
-    "certification_org": "Joint Commission/DNV",
-    "certification_type": "Comprehensive Stroke Center"
-  },
-  {
     "name": "Rochester General Hospital",
     "address": "",
     "city": "Rochester",
