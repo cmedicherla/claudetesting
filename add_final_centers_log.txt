@@ -1,0 +1,128 @@
+Loading existing stroke centers...
+Current database: 243 centers
+
+Geocoding and adding up to 60 new centers...
+1/60: Processing Hackensack University Medical Center, Hackensack, NJ
+  ✓ Added (40.8837051, -74.0559409)
+2/60: Processing Robert Wood Johnson University Hospital, New Brunswick, NJ
+  ✓ Added (40.4953068, -74.4496115)
+3/60: Processing Cooper University Hospital, Camden, NJ
+  ✓ Added (39.941225, -75.1163865)
+4/60: Processing Morristown Medical Center, Morristown, NJ
+  ✓ Added (40.789571, -74.4656846)
+5/60: Processing Jersey Shore University Medical Center, Neptune, NJ
+  ✓ Added (40.2089857, -74.0409934)
+6/60: Processing Saint Barnabas Medical Center, Livingston, NJ
+  ✓ Added (40.7634604, -74.3048418)
+7/60: Processing JFK Medical Center, Edison, NJ
+  ✓ Added (40.5563574, -74.3501777)
+8/60: Processing Ochsner Medical Center, New Orleans, LA
+  ✓ Added (29.9610677, -90.1456737)
+9/60: Processing University Medical Center New Orleans, New Orleans, LA
+  ✓ Added (29.9597986, -90.0821311)
+10/60: Processing Our Lady of the Lake Regional Medical Center, Baton Rouge, LA
+  ✓ Added (30.4032919, -91.1066967)
+11/60: Processing LSU Health Shreveport, Shreveport, LA
+  ✓ Added (32.4805963, -93.7608949)
+12/60: Processing Medical University of South Carolina, Charleston, SC
+  ✓ Added (32.7902452, -79.9576415)
+13/60: Processing Prisma Health Richland, Columbia, SC
+  ✓ Added (34.0257871, -81.0922258)
+14/60: Processing Greenville Memorial Hospital, Greenville, SC
+  ✓ Added (34.819598, -82.4104176)
+15/60: Processing Indiana University Health Methodist Hospital, Indianapolis, IN
+  ✓ Added (39.7912405, -86.1631758)
+16/60: Processing Indiana University Health University Hospital, Indianapolis, IN
+  ✓ Added (39.7683331, -86.1583502)
+17/60: Processing Ascension St. Vincent Indianapolis Hospital, Indianapolis, IN
+  ✓ Added (39.7683331, -86.1583502)
+18/60: Processing Baptist Health Medical Center - Little Rock, Little Rock, AR
+  ✓ Added (34.743831, -92.3810036)
+19/60: Processing UAMS Medical Center, Little Rock, AR
+  ✓ Added (34.7223681, -92.3383026)
+20/60: Processing University of Mississippi Medical Center, Jackson, MS
+  ✓ Added (32.3309299, -90.1723002)
+21/60: Skipping duplicate - Barnes-Jewish Hospital
+22/60: Processing Saint Luke's Hospital of Kansas City, Kansas City, MO
+  ✓ Added (39.0483098, -94.5910794)
+23/60: Processing University of Missouri Hospital, Columbia, MO
+  ✓ Added (38.951883, -92.3337366)
+24/60: Processing Mercy Hospital St. Louis, St. Louis, MO
+  ✓ Added (38.6454887, -90.4460795)
+25/60: Processing Suburban Hospital, Bethesda, MD
+  ✓ Added (38.9978061, -77.1105393)
+26/60: Processing Sinai Hospital of Baltimore, Baltimore, MD
+  ✓ Added (39.3528965, -76.6622872)
+27/60: Processing Methodist Le Bonheur Healthcare, Memphis, TN
+  ✓ Added (35.1460249, -90.0517638)
+28/60: Processing Mayo Clinic Hospital Rochester, Rochester, MN
+  ✓ Added (44.0192805, -92.4809833)
+29/60: Processing Abbott Northwestern Hospital, Minneapolis, MN
+  ✓ Added (44.9540508, -93.2613375)
+30/60: Processing Rhode Island Hospital, Providence, RI
+  ✓ Added (41.8110744, -71.4089995)
+31/60: Processing MemorialCare Long Beach Medical Center, Long Beach, CA
+  ✓ Added (33.7690164, -118.191604)
+32/60: Processing Providence Little Company of Mary Medical Center Torrance, Torrance, CA
+  ✓ Added (33.8388083, -118.357185)
+33/60: Processing Emanate Health Queen of the Valley, West Covina, CA
+  ✓ Added (34.0686208, -117.9389526)
+34/60: Processing Los Robles Hospital and Medical Center, Thousand Oaks, CA
+  ✓ Added (34.1705609, -118.8375937)
+35/60: Processing UC San Diego Medical Center Hillcrest, San Diego, CA
+  ✓ Added (32.7553116, -117.1655247)
+36/60: Processing Virginia Mason Franciscan Health Seattle, Seattle, WA
+  ✓ Added (47.5241595, -122.3652828)
+37/60: Processing Providence Sacred Heart Medical Center Spokane, Spokane, WA
+  ✓ Added (47.6571934, -117.42351)
+38/60: Processing Ascension Saint Thomas Hospital West Nashville, Nashville, TN
+  ✓ Added (36.1622767, -86.7742984)
+39/60: Processing Regional One Health Memphis, Memphis, TN
+  ✓ Added (35.1460249, -90.0517638)
+40/60: Processing Atrium Health Carolinas Medical Center Charlotte, Charlotte, NC
+  ✓ Added (35.2272086, -80.8430827)
+41/60: Processing UC Health University Hospital Cincinnati, Cincinnati, OH
+  ✓ Added (39.1382173, -84.5033265)
+42/60: Processing Mercy Health St Vincent Medical Center Toledo, Toledo, OH
+  ✓ Added (41.6529143, -83.5378173)
+43/60: Processing Spectrum Health Butterworth Hospital Grand Rapids, Grand Rapids, MI
+  ✓ Added (42.9632425, -85.6678639)
+44/60: Processing OSF Saint Francis Medical Center Peoria, Peoria, IL
+  ✓ Added (40.7023663, -89.5899846)
+45/60: Processing Nebraska Medical Center, Omaha, NE
+  ✓ Added (41.2550772, -95.9769529)
+46/60: Skipping duplicate - University of Kansas Hospital
+47/60: Processing University of Iowa Hospitals, Iowa City, IA
+  ✓ Added (41.6584652, -91.5492715)
+48/60: Processing Providence Portland Medical Center, Portland, OR
+  ✓ Added (45.5282065, -122.613422)
+49/60: Processing Oregon Health & Science University, Portland, OR
+  ✓ Added (45.4981929, -122.6864957)
+50/60: Skipping duplicate - University of Utah Hospital
+51/60: Skipping duplicate - Intermountain Medical Center
+52/60: Processing University of Alabama at Birmingham Hospital, Birmingham, AL
+  ✓ Added (33.5206824, -86.8024326)
+53/60: Processing Huntsville Hospital, Huntsville, AL
+  ✓ Added (34.7204666, -86.5809629)
+54/60: Processing University of Kentucky Chandler Hospital, Lexington, KY
+  ✓ Added (38.0464066, -84.4970393)
+55/60: Processing Baptist Health Louisville, Louisville, KY
+  ✓ Added (38.2386809, -85.6391978)
+56/60: Processing University of Louisville Hospital, Louisville, KY
+  ✓ Added (38.2483107, -85.7450689)
+57/60: Processing OU Health University of Oklahoma Medical Center, Oklahoma City, OK
+  ✓ Added (35.4729886, -97.5170536)
+58/60: Processing Saint Francis Hospital Tulsa, Tulsa, OK
+  ✓ Added (36.0715575, -95.9197326)
+59/60: Processing Cabell Huntington Hospital, Huntington, WV
+  ✓ Added (38.4090687, -82.426209)
+60/60: Skipping duplicate - WVU Medicine Ruby Memorial Hospital
+
+============================================================
+Complete!
+Added: 55 new centers
+Skipped: 5 duplicates
+Failed: 0 geocoding failures
+Total in database: 298 centers
+Progress to 297: 298/297 (100.3%)
+============================================================
