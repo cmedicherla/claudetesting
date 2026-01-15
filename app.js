@@ -34,10 +34,6 @@ async function init() {
         statesList = uniqueStates;
         populateStateDropdown(uniqueStates);
 
-        // Update stats
-        document.getElementById('totalCenters').textContent = strokeCenters.length;
-        document.getElementById('totalStates').textContent = uniqueStates.length;
-
         console.log(`Loaded ${strokeCenters.length} stroke centers`);
         console.log(`Loaded ${Object.keys(zipcodeData).length} zipcodes`);
         console.log(`States available: ${uniqueStates.join(', ')}`);
