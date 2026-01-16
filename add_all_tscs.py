@@ -1,0 +1,272 @@
+"""
+Expanded TSC Data Collection Script
+Adding all verified TSC centers from state lists and recent certifications
+"""
+
+import json
+
+# New York State Official List (13 TSC centers)
+# Source: https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center
+NY_TSCS = [
+    {
+        "name": "Brookdale Hospital Medical Center",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11212",
+        "latitude": 40.6570,
+        "longitude": -73.9113,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "Elmhurst Hospital Center",
+        "city": "Elmhurst",
+        "state": "NY",
+        "zipcode": "11373",
+        "latitude": 40.7449,
+        "longitude": -73.8828,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "Kings County Hospital Center",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11203",
+        "latitude": 40.6535,
+        "longitude": -73.9420,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "Lincoln Medical & Mental Health Center",
+        "city": "Bronx",
+        "state": "NY",
+        "zipcode": "10451",
+        "latitude": 40.8086,
+        "longitude": -73.9218,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "MidHudson Regional Hospital",
+        "city": "Poughkeepsie",
+        "state": "NY",
+        "zipcode": "12601",
+        "latitude": 41.7006,
+        "longitude": -73.9246,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.midhudsonregional.org/news/midhudson-regional-hospital-now-providing-lifesavi-1582"
+    },
+    {
+        "name": "Mount Sinai Queens",
+        "city": "Long Island City",
+        "state": "NY",
+        "zipcode": "11102",
+        "latitude": 40.7614,
+        "longitude": -73.9509,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.mountsinai.org/about/newsroom/2021/mount-sinai-queens-earns-prestigious-thrombectomy-capable-stroke-certification-from-joint-commission"
+    },
+    {
+        "name": "Mount Sinai West",
+        "city": "New York",
+        "state": "NY",
+        "zipcode": "10019",
+        "latitude": 40.7672,
+        "longitude": -73.9882,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "New York-Presbyterian Brooklyn Methodist Hospital",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11215",
+        "latitude": 40.6679,
+        "longitude": -73.9816,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "Phelps Hospital",
+        "city": "Sleepy Hollow",
+        "state": "NY",
+        "zipcode": "10591",
+        "latitude": 41.0862,
+        "longitude": -73.8629,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.northwell.edu/news/the-latest/phelps-hospital-earns-advanced-thrombectomy-capable-stroke-center-certification"
+    },
+    {
+        "name": "Richmond University Medical Center",
+        "city": "Staten Island",
+        "state": "NY",
+        "zipcode": "10310",
+        "latitude": 40.6371,
+        "longitude": -74.1093,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "St. Francis Hospital & Heart Center",
+        "city": "Roslyn",
+        "state": "NY",
+        "zipcode": "11576",
+        "latitude": 40.7953,
+        "longitude": -73.6487,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "Vassar Brothers Medical Center",
+        "city": "Poughkeepsie",
+        "state": "NY",
+        "zipcode": "12601",
+        "latitude": 41.7005,
+        "longitude": -73.9394,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    },
+    {
+        "name": "White Plains Hospital Center",
+        "city": "White Plains",
+        "state": "NY",
+        "zipcode": "10601",
+        "latitude": 41.0340,
+        "longitude": -73.7629,
+        "certification_org": "NYS Designated",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://profiles.health.ny.gov/hospital/designated_center/Thrombectomy+Capable+Stroke+Center"
+    }
+]
+
+# Additional TSC centers from other states (2023-2024 certifications)
+OTHER_TSCS = [
+    {
+        "name": "Bridgeport Hospital",
+        "city": "Bridgeport",
+        "state": "CT",
+        "zipcode": "06610",
+        "latitude": 41.1865,
+        "longitude": -73.2007,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.bridgeporthospital.org/news/bridgeport-hospital-certified-by-joint-commission-as-thrombectomy-capable-stroke-center"
+    },
+    {
+        "name": "West Tennessee Healthcare",
+        "city": "Jackson",
+        "state": "TN",
+        "zipcode": "38305",
+        "latitude": 35.6145,
+        "longitude": -88.8139,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.wbbjtv.com/2026/01/08/west-tennessee-healthcare-awarded-thrombectomy-capable-stroke-certification-from-the-joint-commission/"
+    },
+    {
+        "name": "Centra Virginia Baptist Hospital",
+        "city": "Lynchburg",
+        "state": "VA",
+        "zipcode": "24502",
+        "latitude": 37.4138,
+        "longitude": -79.1422,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.centrahealth.com/news/2023-05-23/joint-commission-awards-centra-thrombectomy-capable-stroke-center-certification"
+    },
+    {
+        "name": "NYC Health + Hospitals/South Brooklyn Health",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zipcode": "11235",
+        "latitude": 40.5888,
+        "longitude": -73.9493,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.nychealthandhospitals.org/pressrelease/nyc-health-hospitals-south-brooklyn-health-recognized-for-highest-quality-stroke-care-by-the-joint-commission/"
+    },
+    {
+        "name": "Centennial Hills Hospital",
+        "city": "Las Vegas",
+        "state": "NV",
+        "zipcode": "89149",
+        "latitude": 36.2820,
+        "longitude": -115.3018,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.centennialhillshospital.com/about/news/certified-thrombectomy-stroke-joint-commission"
+    },
+    {
+        "name": "Trinity Health Oakland Hospital",
+        "city": "Pontiac",
+        "state": "MI",
+        "zipcode": "48341",
+        "latitude": 42.6389,
+        "longitude": -83.2911,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.michigan.gov/mdhhs/keep-mi-healthy/communicablediseases/epidemiology/chronicepi/stroke/participating-hospitals",
+        "note": "First TSC in the nation (March 2018)"
+    },
+    {
+        "name": "UPMC Harrisburg",
+        "city": "Harrisburg",
+        "state": "PA",
+        "zipcode": "17104",
+        "latitude": 40.2732,
+        "longitude": -76.8867,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.upmc.com/media/news/central-pa/2024-news-releases/041124-upmc-harrisburg-designated-thrombectomy-capable-stroke-center-by-the-joint-commission"
+    },
+    {
+        "name": "Overlake Medical Center",
+        "city": "Bellevue",
+        "state": "WA",
+        "zipcode": "98004",
+        "latitude": 47.6101,
+        "longitude": -122.2015,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.overlakehospital.org/news/2024-05/overlake-named-advanced-thrombectomy-capable-stroke-center-joint-commission"
+    },
+    {
+        "name": "Memorial Hospital of South Bend",
+        "city": "South Bend",
+        "state": "IN",
+        "zipcode": "46601",
+        "latitude": 41.6764,
+        "longitude": -86.2520,
+        "certification_org": "Joint Commission",
+        "certification_type": "Thrombectomy-Capable Stroke Center",
+        "source": "https://www.beaconhealthsystem.org/news/2024/01/12/memorial-hospital-awarded-thrombectomy-capable-stroke-center-recertification-from-the-joint-commission/"
+    }
+]
+
+# Combine all TSCs
+ALL_TSCS = NY_TSCS + OTHER_TSCS
+
+def save_all_tscs():
+    """Save all compiled TSC data"""
+    with open('data/thrombectomy_centers.json', 'w') as f:
+        json.dump(ALL_TSCS, f, indent=2)
+    print(f"Saved {len(ALL_TSCS)} TSC centers to data/thrombectomy_centers.json")
+    print(f"  - New York: {len(NY_TSCS)} centers")
+    print(f"  - Other states: {len(OTHER_TSCS)} centers")
+
+if __name__ == "__main__":
+    save_all_tscs()
