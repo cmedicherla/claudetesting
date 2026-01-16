@@ -16,7 +16,7 @@ async function init() {
         const cscResponse = await fetch('data/stroke_centers.json');
         comprehensiveCenters = await cscResponse.json();
 
-        const tscResponse = await fetch('data/tsc_sample.json');
+        const tscResponse = await fetch('data/thrombectomy_centers.json');
         thrombectomyCenters = await tscResponse.json();
 
         const pscResponse = await fetch('data/psc_sample.json');

@@ -1,0 +1,91 @@
+[
+  {
+    "name": "Bridgeport Hospital",
+    "city": "Bridgeport",
+    "state": "CT",
+    "zipcode": "06610",
+    "latitude": 41.1865,
+    "longitude": -73.2007,
+    "certification_org": "Joint Commission",
+    "certification_type": "Thrombectomy-Capable Stroke Center",
+    "source": "https://www.bridgeporthospital.org/news/bridgeport-hospital-certified-by-joint-commission-as-thrombectomy-capable-stroke-center"
+  },
+  {
+    "name": "West Tennessee Healthcare",
+    "city": "Jackson",
+    "state": "TN",
+    "zipcode": "38305",
+    "latitude": 35.6145,
+    "longitude": -88.8139,
+    "certification_org": "Joint Commission",
+    "certification_type": "Thrombectomy-Capable Stroke Center",
+    "source": "https://www.wbbjtv.com/2026/01/08/west-tennessee-healthcare-awarded-thrombectomy-capable-stroke-certification-from-the-joint-commission/"
+  },
+  {
+    "name": "Phelps Hospital",
+    "city": "Sleepy Hollow",
+    "state": "NY",
+    "zipcode": "10591",
+    "latitude": 41.0862,
+    "longitude": -73.8629,
+    "certification_org": "Joint Commission",
+    "certification_type": "Thrombectomy-Capable Stroke Center",
+    "source": "https://www.northwell.edu/news/the-latest/phelps-hospital-earns-advanced-thrombectomy-capable-stroke-center-certification"
+  },
+  {
+    "name": "Centra Virginia Baptist Hospital",
+    "city": "Lynchburg",
+    "state": "VA",
+    "zipcode": "24502",
+    "latitude": 37.4138,
+    "longitude": -79.1422,
+    "certification_org": "Joint Commission",
+    "certification_type": "Thrombectomy-Capable Stroke Center",
+    "source": "https://www.centrahealth.com/news/2023-05-23/joint-commission-awards-centra-thrombectomy-capable-stroke-center-certification"
+  },
+  {
+    "name": "Mount Sinai Queens",
+    "city": "Long Island City",
+    "state": "NY",
+    "zipcode": "11102",
+    "latitude": 40.7614,
+    "longitude": -73.9509,
+    "certification_org": "Joint Commission",
+    "certification_type": "Thrombectomy-Capable Stroke Center",
+    "source": "https://www.mountsinai.org/about/newsroom/2021/mount-sinai-queens-earns-prestigious-thrombectomy-capable-stroke-certification-from-joint-commission"
+  },
+  {
+    "name": "NYC Health + Hospitals/South Brooklyn Health",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zipcode": "11235",
+    "latitude": 40.5888,
+    "longitude": -73.9493,
+    "certification_org": "Joint Commission",
+    "certification_type": "Thrombectomy-Capable Stroke Center",
+    "source": "https://www.nychealthandhospitals.org/pressrelease/nyc-health-hospitals-south-brooklyn-health-recognized-for-highest-quality-stroke-care-by-the-joint-commission/"
+  },
+  {
+    "name": "Centennial Hills Hospital",
+    "city": "Las Vegas",
+    "state": "NV",
+    "zipcode": "89149",
+    "latitude": 36.282,
+    "longitude": -115.3018,
+    "certification_org": "Joint Commission",
+    "certification_type": "Thrombectomy-Capable Stroke Center",
+    "source": "https://www.centennialhillshospital.com/about/news/certified-thrombectomy-stroke-joint-commission"
+  },
+  {
+    "name": "Trinity Health Oakland Hospital",
+    "city": "Pontiac",
+    "state": "MI",
+    "zipcode": "48341",
+    "latitude": 42.6389,
+    "longitude": -83.2911,
+    "certification_org": "Joint Commission",
+    "certification_type": "Thrombectomy-Capable Stroke Center",
+    "source": "https://www.michigan.gov/mdhhs/keep-mi-healthy/communicablediseases/epidemiology/chronicepi/stroke/participating-hospitals",
+    "note": "First TSC in the nation (March 2018)"
+  }
+]
