@@ -45,18 +45,34 @@ function addStrokeCenters() {
     // 4.5 hours at 60 mph = 270 miles = approximately 434,522 meters
     const coverageRadiusMeters = 270 * 1609.34; // Convert miles to meters
 
+    // First, add a pink overlay covering the continental US (the entire potential desert area)
+    const usaBounds = [
+        [24.396308, -125.0],  // Southwest corner
+        [49.384358, -66.93457] // Northeast corner
+    ];
+
+    L.rectangle(usaBounds, {
+        color: '#F44336',
+        fillColor: '#F44336',
+        fillOpacity: 0.15,
+        weight: 0,
+        interactive: false
+    }).addTo(map);
+
+    // Add white/transparent circles to "erase" the pink in covered areas
     strokeCenters.forEach(center => {
-        // Add a coverage circle (green/light green for covered areas)
         L.circle([center.latitude, center.longitude], {
             radius: coverageRadiusMeters,
-            color: '#4CAF50',
-            fillColor: '#4CAF50',
-            fillOpacity: 0.08,
-            weight: 0.5,
-            opacity: 0.3
+            color: 'rgba(255, 255, 255, 0.85)',
+            fillColor: 'rgba(255, 255, 255, 0.85)',
+            fillOpacity: 0.85,
+            weight: 0,
+            interactive: false
         }).addTo(map);
+    });
 
-        // Add marker for the stroke center
+    // Now add the black marker dots for each stroke center on top
+    strokeCenters.forEach(center => {
         const marker = L.circleMarker([center.latitude, center.longitude], {
             radius: 5,
             fillColor: '#1d1d1f',
@@ -80,12 +96,12 @@ function addStrokeCenters() {
         marker.bindPopup(popupContent);
     });
 
-    // Add desert background layer explanation
+    // Console explanation
     console.log(`
-        Stroke Desert Visualization:
-        - Green circles show areas within 4.5 hours (270 miles) of a stroke center
-        - Uncovered (white/map background) areas are "stroke deserts"
-        - ${strokeCenters.length} comprehensive stroke centers mapped
+        Stroke Desert Visualization (Inverted):
+        - Pink areas show "stroke deserts" (>4.5 hours from a center)
+        - White/cleared areas are within 270 miles of a stroke center
+        - ${strokeCenters.length} comprehensive stroke centers mapped as black dots
     `);
 }
 
