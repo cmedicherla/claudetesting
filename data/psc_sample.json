@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Community Hospital - Sample 1",
+    "city": "Boise",
+    "state": "ID",
+    "zipcode": "83702",
+    "latitude": 43.6150,
+    "longitude": -116.2023,
+    "certification_org": "Joint Commission",
+    "certification_type": "Primary Stroke Center"
+  },
+  {
+    "name": "Community Hospital - Sample 2",
+    "city": "Billings",
+    "state": "MT",
+    "zipcode": "59101",
+    "latitude": 45.7833,
+    "longitude": -108.5007,
+    "certification_org": "Joint Commission",
+    "certification_type": "Primary Stroke Center"
+  },
+  {
+    "name": "Community Hospital - Sample 3",
+    "city": "Fargo",
+    "state": "ND",
+    "zipcode": "58102",
+    "latitude": 46.8772,
+    "longitude": -96.7898,
+    "certification_org": "Joint Commission",
+    "certification_type": "Primary Stroke Center"
+  }
+]
