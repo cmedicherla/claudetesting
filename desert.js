@@ -54,7 +54,7 @@ function addStrokeCenters() {
     L.rectangle(usaBounds, {
         color: '#F44336',
         fillColor: '#F44336',
-        fillOpacity: 0.15,
+        fillOpacity: 0.35,
         weight: 0,
         interactive: false
     }).addTo(map);
@@ -63,9 +63,9 @@ function addStrokeCenters() {
     strokeCenters.forEach(center => {
         L.circle([center.latitude, center.longitude], {
             radius: coverageRadiusMeters,
-            color: 'rgba(255, 255, 255, 0.85)',
-            fillColor: 'rgba(255, 255, 255, 0.85)',
-            fillOpacity: 0.85,
+            color: 'rgba(255, 255, 255, 0.95)',
+            fillColor: 'rgba(255, 255, 255, 0.95)',
+            fillOpacity: 0.95,
             weight: 0,
             interactive: false
         }).addTo(map);
