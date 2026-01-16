@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroke Desert Map - USA</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f7;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0;
+            background: white;
+        }
+
+        header {
+            background: #ffffff;
+            color: #1d1d1f;
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            color: #1d1d1f;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #6e6e73;
+            font-weight: 400;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        .info-section {
+            background: #fafafa;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .info-section p {
+            color: #1d1d1f;
+            font-size: 1em;
+            max-width: 700px;
+            margin: 0 auto 15px;
+            line-height: 1.6;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .legend-color {
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            border: 1px solid #d2d2d7;
+        }
+
+        .covered {
+            background: rgba(76, 175, 80, 0.2);
+        }
+
+        .desert {
+            background: rgba(244, 67, 54, 0.15);
+        }
+
+        .center-marker {
+            background: #1d1d1f;
+        }
+
+        #map {
+            width: 100%;
+            height: 700px;
+            border: none;
+        }
+
+        .disclaimer {
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            color: #6e6e73;
+            font-size: 0.9em;
+            border-top: 1px solid #e5e5e7;
+        }
+
+        .disclaimer strong {
+            color: #d1180b;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            #map {
+                height: 500px;
+            }
+
+            .legend {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stroke Desert Map</h1>
+            <p class="subtitle">Visualizing areas in the United States that are more than 4.5 hours from a comprehensive stroke center</p>
+        </header>
+
+        <div class="info-section">
+            <p><strong>What is a Stroke Desert?</strong></p>
+            <p>A stroke desert is a region where residents are located more than 4.5 hours travel time (approximately 270 miles) from the nearest comprehensive stroke center. These areas face significant barriers to accessing hyperacute stroke care.</p>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color center-marker"></div>
+                    <span>Comprehensive Stroke Center</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color covered"></div>
+                    <span>Covered Area (within 4.5 hours)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color desert"></div>
+                    <span>Stroke Desert (beyond 4.5 hours)</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="disclaimer">
+            <strong>Important Notice</strong>
+            <p>This map uses distance as a proxy for travel time (270 miles ≈ 4.5 hours at 60 mph). Actual travel times may vary based on road conditions, terrain, and traffic. This visualization is for informational purposes only.</p>
+            <p style="margin-top: 10px;"><strong style="color: #d1180b; display: inline;">Always call 911 in case of a stroke emergency.</strong></p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="desert.js"></script>
+</body>
+</html>
