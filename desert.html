@@ -85,7 +85,7 @@
         }
 
         .covered {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.1);
             border: 1px solid #d2d2d7;
         }
 
@@ -139,21 +139,21 @@
     <div class="container">
         <header>
             <h1>Stroke Desert Map</h1>
-            <p class="subtitle">Visualizing areas in the United States that are more than 4.5 hours from a comprehensive stroke center</p>
+            <p class="subtitle">Visualizing areas in the United States beyond the 1-hour golden window for stroke treatment</p>
         </header>
 
         <div class="info-section">
             <p><strong>What is a Stroke Desert?</strong></p>
-            <p>A stroke desert is a region where residents are located more than 4.5 hours travel time (approximately 270 miles) from the nearest comprehensive stroke center. These areas face significant barriers to accessing hyperacute stroke care.</p>
+            <p>A stroke desert is a region where residents are located more than 1 hour travel time (approximately 60 miles) from the nearest comprehensive stroke center. The first hour after stroke onset is critical for treatment - areas beyond this "golden window" face significant barriers to accessing hyperacute stroke care.</p>
 
             <div class="legend">
                 <div class="legend-item">
                     <div class="legend-color desert"></div>
-                    <span>Stroke Desert (beyond 4.5 hours)</span>
+                    <span>Stroke Desert (beyond 1-hour golden window)</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color covered"></div>
-                    <span>Covered Area (within 4.5 hours)</span>
+                    <span>Within Golden Window (60 miles)</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color center-marker"></div>
@@ -166,7 +166,7 @@
 
         <div class="disclaimer">
             <strong>Important Notice</strong>
-            <p>This map uses distance as a proxy for travel time (270 miles ≈ 4.5 hours at 60 mph). Actual travel times may vary based on road conditions, terrain, and traffic. This visualization is for informational purposes only.</p>
+            <p>This map uses distance as a proxy for travel time (60 miles ≈ 1 hour at 60 mph). Actual travel times may vary based on road conditions, terrain, and traffic. The 1-hour golden window represents the critical period for optimal stroke treatment. This visualization is for informational purposes only.</p>
             <p style="margin-top: 10px;"><strong style="color: #d1180b; display: inline;">Always call 911 in case of a stroke emergency.</strong></p>
         </div>
     </div>

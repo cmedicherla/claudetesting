@@ -42,8 +42,8 @@ function initializeMap() {
 
 // Add stroke centers and coverage circles
 function addStrokeCenters() {
-    // 4.5 hours at 60 mph = 270 miles = approximately 434,522 meters
-    const coverageRadiusMeters = 270 * 1609.34; // Convert miles to meters
+    // 1 hour at 60 mph = 60 miles (golden window for stroke treatment)
+    const coverageRadiusMeters = 60 * 1609.34; // Convert miles to meters
 
     // First, add a pink overlay covering the continental US (the entire potential desert area)
     const usaBounds = [
@@ -63,9 +63,9 @@ function addStrokeCenters() {
     strokeCenters.forEach(center => {
         L.circle([center.latitude, center.longitude], {
             radius: coverageRadiusMeters,
-            color: 'rgba(255, 255, 255, 0.95)',
-            fillColor: 'rgba(255, 255, 255, 0.95)',
-            fillOpacity: 0.95,
+            color: 'rgba(255, 255, 255, 0.1)',
+            fillColor: 'rgba(255, 255, 255, 0.1)',
+            fillOpacity: 0.1,
             weight: 0,
             interactive: false
         }).addTo(map);
@@ -99,8 +99,8 @@ function addStrokeCenters() {
     // Console explanation
     console.log(`
         Stroke Desert Visualization (Inverted):
-        - Pink areas show "stroke deserts" (>4.5 hours from a center)
-        - White/cleared areas are within 270 miles of a stroke center
+        - Pink areas show "stroke deserts" (beyond 1-hour golden window)
+        - Faint white circles show areas within 60 miles of a stroke center
         - ${strokeCenters.length} comprehensive stroke centers mapped as black dots
     `);
 }
