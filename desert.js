@@ -45,34 +45,18 @@ function addStrokeCenters() {
     // 1 hour at 60 mph = 60 miles (golden window for stroke treatment)
     const coverageRadiusMeters = 60 * 1609.34; // Convert miles to meters
 
-    // First, add a pink overlay covering the continental US (the entire potential desert area)
-    const usaBounds = [
-        [24.396308, -125.0],  // Southwest corner
-        [49.384358, -66.93457] // Northeast corner
-    ];
-
-    L.rectangle(usaBounds, {
-        color: '#F44336',
-        fillColor: '#F44336',
-        fillOpacity: 0.35,
-        weight: 0,
-        interactive: false
-    }).addTo(map);
-
-    // Add white/transparent circles to "erase" the pink in covered areas
     strokeCenters.forEach(center => {
+        // Add a green coverage circle showing areas within the golden window
         L.circle([center.latitude, center.longitude], {
             radius: coverageRadiusMeters,
-            color: 'rgba(255, 255, 255, 0.1)',
-            fillColor: 'rgba(255, 255, 255, 0.1)',
-            fillOpacity: 0.1,
-            weight: 0,
-            interactive: false
+            color: '#4CAF50',
+            fillColor: '#4CAF50',
+            fillOpacity: 0.15,
+            weight: 1,
+            opacity: 0.4
         }).addTo(map);
-    });
 
-    // Now add the black marker dots for each stroke center on top
-    strokeCenters.forEach(center => {
+        // Add marker for the stroke center
         const marker = L.circleMarker([center.latitude, center.longitude], {
             radius: 5,
             fillColor: '#1d1d1f',
@@ -98,9 +82,9 @@ function addStrokeCenters() {
 
     // Console explanation
     console.log(`
-        Stroke Desert Visualization (Inverted):
-        - Pink areas show "stroke deserts" (beyond 1-hour golden window)
-        - Faint white circles show areas within 60 miles of a stroke center
+        Stroke Desert Visualization:
+        - Green circles show areas within 1-hour golden window (60 miles)
+        - Grey/uncovered areas are "stroke deserts" (beyond the golden window)
         - ${strokeCenters.length} comprehensive stroke centers mapped as black dots
     `);
 }
