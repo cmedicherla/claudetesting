@@ -1332,6 +1332,18 @@
     "certification_type": "Comprehensive Stroke Center"
   },
   {
+    "name": "ASCENSION VIA CHRISTI ST. FRANCIS",
+    "address": "929 N ST FRANCIS ST",
+    "city": "WICHITA",
+    "state": "KS",
+    "zipcode": "67214",
+    "latitude": 37.6922,
+    "longitude": -97.3375,
+    "phone": "(316) 268-5000",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
     "name": "University of Kentucky Chandler Hospital",
     "address": "",
     "city": "Lexington",
@@ -1704,6 +1716,18 @@
     "certification_type": "Comprehensive Stroke Center"
   },
   {
+    "name": "BILLINGS CLINIC",
+    "address": "1020 N 27TH ST",
+    "city": "BILLINGS",
+    "state": "MT",
+    "zipcode": "59101",
+    "latitude": 45.7875,
+    "longitude": -108.5069,
+    "phone": "(406) 238-2500",
+    "certification_org": "DNV",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
     "name": "Mission Hospital",
     "address": "",
     "city": "Asheville",
@@ -1809,6 +1833,18 @@
     "longitude": -96.8768,
     "phone": "(701) 417-2000",
     "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "CHI HEALTH CREIGHTON UNIVERSITY MEDICAL CENTER - BERGAN MERCY",
+    "address": "7500 MERCY RD",
+    "city": "OMAHA",
+    "state": "NE",
+    "zipcode": "68124",
+    "latitude": 41.2821,
+    "longitude": -96.0285,
+    "phone": "(402) 398-6000",
+    "certification_org": "DNV",
     "certification_type": "Comprehensive Stroke Center"
   },
   {
@@ -1929,6 +1965,42 @@
     "longitude": -106.6179208,
     "phone": "",
     "certification_org": "Joint Commission/DNV",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "SUNRISE HOSPITAL & MEDICAL CENTER",
+    "address": "3186 S MARYLAND PKWY",
+    "city": "LAS VEGAS",
+    "state": "NV",
+    "zipcode": "89109",
+    "latitude": 36.1447,
+    "longitude": -115.1354,
+    "phone": "(702) 731-8000",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "VALLEY HOSPITAL MEDICAL CENTER",
+    "address": "620 SHADOW LANE",
+    "city": "LAS VEGAS",
+    "state": "NV",
+    "zipcode": "89106",
+    "latitude": 36.1716,
+    "longitude": -115.1391,
+    "phone": "(702) 388-4000",
+    "certification_org": "DNV",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "RENOWN REGIONAL MEDICAL CENTER",
+    "address": "1155 MILL ST",
+    "city": "RENO",
+    "state": "NV",
+    "zipcode": "89502",
+    "latitude": 39.5296,
+    "longitude": -119.8138,
+    "phone": "(775) 982-4100",
+    "certification_org": "Joint Commission",
     "certification_type": "Comprehensive Stroke Center"
   },
   {
@@ -2661,6 +2733,18 @@
     "longitude": -82.4104176,
     "phone": "",
     "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "AVERA MCKENNAN HOSPITAL & UNIVERSITY HEALTH CENTER",
+    "address": "1325 S CLIFF AVE",
+    "city": "SIOUX FALLS",
+    "state": "SD",
+    "zipcode": "57105",
+    "latitude": 43.5398,
+    "longitude": -96.7311,
+    "phone": "(605) 322-8000",
+    "certification_org": "DNV",
     "certification_type": "Comprehensive Stroke Center"
   },
   {
