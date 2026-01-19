@@ -32,12 +32,12 @@ async function init() {
 
 // Initialize Leaflet map
 function initializeMap() {
-    // Create map centered on New York region
+    // Create map centered on continental US
     map = L.map('map', {
-        center: [42.9, -75.5],
-        zoom: 7,
-        minZoom: 6,
-        maxZoom: 12
+        center: [39.8283, -98.5795],
+        zoom: 5,
+        minZoom: 4,
+        maxZoom: 10
     });
 
     // Add minimalist grayscale basemap
