@@ -3468,6 +3468,18 @@
     "certification_type": "Comprehensive Stroke Center"
   },
   {
+    "name": "VIRGINIA HOSPITAL CENTER",
+    "address": "1701 N GEORGE MASON DR",
+    "city": "ARLINGTON",
+    "state": "VA",
+    "zipcode": "22205",
+    "latitude": 38.8858,
+    "longitude": -77.1397,
+    "phone": "(703) 558-5000",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
     "name": "University of Virginia Medical Center",
     "address": "",
     "city": "Charlottesville",
@@ -3512,6 +3524,18 @@
     "latitude": 36.8624604,
     "longitude": -76.3038338,
     "phone": "",
+    "certification_org": "Joint Commission",
+    "certification_type": "Comprehensive Stroke Center"
+  },
+  {
+    "name": "BON SECOURS ST. MARY'S HOSPITAL",
+    "address": "5801 BREMO RD",
+    "city": "RICHMOND",
+    "state": "VA",
+    "zipcode": "23226",
+    "latitude": 37.5934,
+    "longitude": -77.5103,
+    "phone": "(804) 285-2011",
     "certification_org": "Joint Commission",
     "certification_type": "Comprehensive Stroke Center"
   },
